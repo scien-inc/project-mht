@@ -1,0 +1,35 @@
+{
+    "mask_name": "mask_141400656.npy",
+    "mask_height": 1080,
+    "mask_width": 1920,
+    "promote_type": "mask",
+    "labels": {
+        "1": {
+            "instance_id": "cc_id1001",
+            "class_name": "person",
+            "x1": 388,
+            "y1": 88,
+            "x2": 492,
+            "y2": 514,
+            "logit": 0.0
+        },
+        "2": {
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 574,
+            "y1": 225,
+            "x2": 750,
+            "y2": 425,
+            "logit": 0.0
+        },
+        "3": {
+            "instance_id": 3,
+            "class_name": "person",
+            "x1": 575,
+            "y1": 224,
+            "x2": 751,
+            "y2": 430,
+            "logit": 0.0
+        }
+    }
+}

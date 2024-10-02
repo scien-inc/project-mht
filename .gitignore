@@ -12,6 +12,7 @@ gsam2/checkpoints/*.pt
 *.mp4
 gsam2/notebooks/videos/frames/*
 *.pt
+*.jpg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

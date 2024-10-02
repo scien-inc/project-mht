@@ -1,0 +1,88 @@
+{
+    "mask_name": "mask_141346856.npy",
+    "mask_height": 1080,
+    "mask_width": 1920,
+    "promote_type": "mask",
+    "labels": {
+        "1": {
+            "instance_id": 1,
+            "class_name": "person",
+            "x1": 1181,
+            "y1": 454,
+            "x2": 1666,
+            "y2": 1079,
+            "logit": 0.0,
+            "former_instance_id": "cc_id1001"
+        },
+        "2": {
+            "instance_id": 3,
+            "class_name": "person",
+            "x1": 572,
+            "y1": 225,
+            "x2": 758,
+            "y2": 475,
+            "logit": 0.0,
+            "former_instance_id": 2
+        },
+        "3": {
+            "instance_id": 1,
+            "class_name": "person",
+            "x1": 1181,
+            "y1": 454,
+            "x2": 1665,
+            "y2": 1079,
+            "logit": 0.0,
+            "former_instance_id": "cc_id1001"
+        },
+        "4": {
+            "instance_id": 3,
+            "class_name": "person",
+            "x1": 572,
+            "y1": 226,
+            "x2": 752,
+            "y2": 428,
+            "logit": 0.0,
+            "former_instance_id": 2
+        },
+        "5": {
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 572,
+            "y1": 225,
+            "x2": 757,
+            "y2": 575,
+            "logit": 0.0,
+            "former_instance_id": 3
+        },
+        "6": {
+            "instance_id": 4,
+            "class_name": "person",
+            "x1": 572,
+            "y1": 225,
+            "x2": 762,
+            "y2": 479,
+            "logit": 0.0,
+            "former_instance_id": 4
+        },
+        "7": {
+            "instance_id": "cc_id1001",
+            "class_name": "person",
+            "x1": 1288,
+            "y1": 115,
+            "x2": 1477,
+            "y2": 674,
+            "logit": 0.0,
+            "former_instance_id": 1
+        },
+        "8": {
+            "instance_id": 3,
+            "class_name": "person",
+            "x1": 580,
+            "y1": 223,
+            "x2": 766,
+            "y2": 484,
+            "logit": 0.0,
+            "former_instance_id": 2
+        }
+    }
+}

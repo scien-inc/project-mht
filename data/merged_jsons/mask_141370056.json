@@ -1,0 +1,68 @@
+{
+    "mask_name": "mask_141370056.npy",
+    "mask_height": 1080,
+    "mask_width": 1920,
+    "promote_type": "mask",
+    "labels": {
+        "1": {
+            "instance_id": 1,
+            "class_name": "person",
+            "x1": 1447,
+            "y1": 96,
+            "x2": 1588,
+            "y2": 517,
+            "logit": 0.0,
+            "former_instance_id": "cc_id1001"
+        },
+        "2": {
+            "instance_id": 6,
+            "class_name": "person",
+            "x1": 569,
+            "y1": 224,
+            "x2": 764,
+            "y2": 475,
+            "logit": 0.0,
+            "former_instance_id": 6
+        },
+        "3": {
+            "instance_id": 1,
+            "class_name": "person",
+            "x1": 1447,
+            "y1": 96,
+            "x2": 1588,
+            "y2": 516,
+            "logit": 0.0,
+            "former_instance_id": 1
+        },
+        "4": {
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 569,
+            "y1": 225,
+            "x2": 764,
+            "y2": 489,
+            "logit": 0.0,
+            "former_instance_id": 2
+        },
+        "5": {
+            "instance_id": 1,
+            "class_name": "person",
+            "x1": 1447,
+            "y1": 96,
+            "x2": 1588,
+            "y2": 517,
+            "logit": 0.0,
+            "former_instance_id": 1
+        },
+        "6": {
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 569,
+            "y1": 224,
+            "x2": 764,
+            "y2": 475,
+            "logit": 0.0,
+            "former_instance_id": 2
+        }
+    }
+}

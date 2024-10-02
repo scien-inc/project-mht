@@ -5,21 +5,30 @@
     "promote_type": "mask",
     "labels": {
         "1": {
-            "instance_id": 1,
+            "instance_id": "cc_id1001",
             "class_name": "person",
-            "x1": 261,
-            "y1": 123,
-            "x2": 400,
-            "y2": 575,
+            "x1": 1222,
+            "y1": 157,
+            "x2": 1475,
+            "y2": 848,
             "logit": 0.0
         },
         "2": {
             "instance_id": 2,
             "class_name": "person",
-            "x1": 574,
-            "y1": 226,
-            "x2": 750,
-            "y2": 426,
+            "x1": 569,
+            "y1": 227,
+            "x2": 768,
+            "y2": 477,
+            "logit": 0.0
+        },
+        "5": {
+            "instance_id": 5,
+            "class_name": "person",
+            "x1": 569,
+            "y1": 228,
+            "x2": 728,
+            "y2": 427,
             "logit": 0.0
         }
     }
