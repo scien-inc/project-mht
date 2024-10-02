@@ -4,8 +4,7 @@ import pandas as pd
 import json
 import glob
 import torch
-# from ..utils.video_utils import create_video_from_images
-# from ..utils.common_utils import CommonUtils
+import argparse  # argparseをインポート
 
 class MaskIDCorrector:
     def __init__(self, mask_data_dir, json_data_dir, csv_file_path, corrected_mask_dir, corrected_json_dir, device='cuda'):
@@ -204,7 +203,6 @@ class MaskIDCorrector:
         with open(corrected_json_path, 'w', encoding='utf-8') as f:
             json.dump(json_data, f, ensure_ascii=False, indent=4)
 
-
     def run(self):
         """
         全体の処理を実行します。
@@ -212,22 +210,22 @@ class MaskIDCorrector:
         self.correct_mask_ids()
 
 if __name__ == "__main__":
-    mask_data_dir = "./outputs/mask_data"  # マスクが保存されている元のディレクトリ
-    json_data_dir = "./outputs/json_data"  # JSONデータが保存されている元のディレクトリ
-    csv_file_path = "../data/results.csv"  # CSVファイルのパス
-
-    corrected_mask_dir = "./outputs/corrected_masks"  # 修正後のマスクを保存するディレクトリ
-    corrected_json_dir = "./outputs/corrected_jsons"  # 修正後のJSONファイルを保存するディレクトリ
-
-    # デバイスを指定（GPUを使用）
-    device = 'cuda'
+    # コマンドライン引数をパース
+    parser = argparse.ArgumentParser(description='Mask ID Corrector')
+    parser.add_argument('--mask_data_dir', type=str, required=True, help='マスクが保存されている元のディレクトリ')
+    parser.add_argument('--json_data_dir', type=str, required=True, help='JSONデータが保存されている元のディレクトリ')
+    parser.add_argument('--csv_file_path', type=str, required=True, help='CSVファイルのパス')
+    parser.add_argument('--corrected_mask_dir', type=str, required=True, help='修正後のマスクを保存するディレクトリ')
+    parser.add_argument('--corrected_json_dir', type=str, required=True, help='修正後のJSONファイルを保存するディレクトリ')
+    parser.add_argument('--device', type=str, default='cuda', help="処理に使用するデバイス（'cuda'または'cpu'）")
+    args = parser.parse_args()
 
     corrector = MaskIDCorrector(
-        mask_data_dir,
-        json_data_dir,
-        csv_file_path,
-        corrected_mask_dir,
-        corrected_json_dir,
-        device
+        mask_data_dir=args.mask_data_dir,
+        json_data_dir=args.json_data_dir,
+        csv_file_path=args.csv_file_path,
+        corrected_mask_dir=args.corrected_mask_dir,
+        corrected_json_dir=args.corrected_json_dir,
+        device=args.device
     )
     corrector.run()

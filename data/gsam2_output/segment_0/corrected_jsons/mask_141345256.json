@@ -1,0 +1,26 @@
+{
+    "mask_name": "mask_141345256.npy",
+    "mask_height": 1080,
+    "mask_width": 1920,
+    "promote_type": "mask",
+    "labels": {
+        "1": {
+            "instance_id": "cc_id1001",
+            "class_name": "person",
+            "x1": 1228,
+            "y1": 278,
+            "x2": 1548,
+            "y2": 1079,
+            "logit": 0.0
+        },
+        "2": {
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 572,
+            "y1": 225,
+            "x2": 757,
+            "y2": 471,
+            "logit": 0.0
+        }
+    }
+}

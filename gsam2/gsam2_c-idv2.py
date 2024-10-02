@@ -6,13 +6,14 @@ import supervision as sv
 from PIL import Image
 from sam2.build_sam import build_sam2_video_predictor, build_sam2
 from sam2.sam2_image_predictor import SAM2ImagePredictor
-from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection 
+from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection
 from utils.track_utils import sample_points_from_masks
 from utils.video_utils import create_video_from_images
 from utils.common_utils import CommonUtils
 from utils.mask_dictionary_model import MaskDictionaryModel, ObjectInfo
 import json
 import copy
+import argparse  # argparseを追加
 
 class VideoProcessor:
     def __init__(self, input_folder, output_dir="./outputs", device_id=0):
@@ -48,7 +49,7 @@ class VideoProcessor:
 
     def initialize_models(self):
         # SAM2ビデオ予測器と画像予測器の初期化
-        sam2_checkpoint = "./checkpoints/sam2_hiera_large.pt"
+        sam2_checkpoint = "./gsam2/checkpoints/sam2_hiera_large.pt"
         model_cfg = "sam2_hiera_l.yaml"
         self.video_predictor = build_sam2_video_predictor(model_cfg, sam2_checkpoint)
         sam2_image_model = build_sam2(model_cfg, sam2_checkpoint, device=self.device)
@@ -162,11 +163,11 @@ class VideoProcessor:
                         class_name=mask_dict.get_target_class_name(out_obj_id)
                     )
                     object_info.update_box()
-                    frame_masks.labels[out_obj_id] = object_info
                     image_base_name = self.frame_names[out_frame_idx].split(".")[0]
                     frame_masks.mask_name = f"mask_{image_base_name}.npy"
                     frame_masks.mask_height = out_mask.shape[-2]
                     frame_masks.mask_width = out_mask.shape[-1]
+                    frame_masks.labels[out_obj_id] = object_info
 
                 video_segments[out_frame_idx] = frame_masks
                 self.sam2_masks = copy.deepcopy(frame_masks)
@@ -204,6 +205,32 @@ class VideoProcessor:
 
 
 if __name__ == "__main__":
-    input_folder = "notebooks/videos/images"
-    processor = VideoProcessor(input_folder)
+    # 引数パーサの設定
+    parser = argparse.ArgumentParser(description="Video Processor Script")
+    parser.add_argument(
+        "--input_folder",
+        type=str,
+        required=True,
+        help="入力フレーム画像が保存されているフォルダのパス"
+    )
+    parser.add_argument(
+        "--output_dir",
+        type=str,
+        default="./outputs",
+        help="出力を保存するフォルダのパス"
+    )
+    parser.add_argument(
+        "--device_id",
+        type=int,
+        default=0,
+        help="使用するCUDAデバイスのID（デフォルトは0）"
+    )
+    args = parser.parse_args()
+
+    # VideoProcessorのインスタンスを作成し、処理を実行
+    processor = VideoProcessor(
+        input_folder=args.input_folder,
+        output_dir=args.output_dir,
+        device_id=args.device_id
+    )
     processor.run()
