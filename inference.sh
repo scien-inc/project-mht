@@ -12,12 +12,19 @@ INTERVAL=50 #秒数ではなく枚数
 rm -rf $OUTPUT_DIR/*
 rm -rf $OUTPUT_DIR_GSAM2/*
 
-python module/split.py --frames_folder "$VIDEO_PATH" --output_base_dir "$OUTPUT_DIR" --duration $DURATION --interval $INTERVAL
+python module/split.py \
+    --frames_folder "$VIDEO_PATH" \
+    --output_base_dir "$OUTPUT_DIR" \
+    --duration $DURATION \
+    --interval $INTERVAL
 
 # OUTPUT_DIR内のすべてのディレクトリに対して処理を行う  
 for dir in `ls $OUTPUT_DIR`
 do
-    python gsam2/gsam2_c-idv2.py --input_folder $OUTPUT_DIR/$dir --output_dir $OUTPUT_DIR_GSAM2/$dir --device_id 1
+    python gsam2/gsam2_c-idv2.py \
+        --input_folder $OUTPUT_DIR/$dir \
+        --output_dir $OUTPUT_DIR_GSAM2/$dir \
+        --device_id 1
 done
 
 
