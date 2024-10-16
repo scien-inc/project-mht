@@ -7,7 +7,7 @@
         "1": {
             "instance_id": "cc_id1001",
             "class_name": "person",
-            "x1": 882,
+            "x1": 881,
             "y1": 108,
             "x2": 1058,
             "y2": 599,
@@ -15,36 +15,16 @@
             "former_instance_id": 1
         },
         "2": {
-            "instance_id": 3,
+            "instance_id": 2,
             "class_name": "person",
-            "x1": 584,
+            "x1": 585,
             "y1": 223,
-            "x2": 749,
-            "y2": 435,
+            "x2": 765,
+            "y2": 467,
             "logit": 0.0,
             "former_instance_id": 2
         },
         "3": {
-            "instance_id": "cc_id1001",
-            "class_name": "person",
-            "x1": 882,
-            "y1": 108,
-            "x2": 1058,
-            "y2": 599,
-            "logit": 0.0,
-            "former_instance_id": "cc_id1001"
-        },
-        "4": {
-            "instance_id": 3,
-            "class_name": "person",
-            "x1": 584,
-            "y1": 223,
-            "x2": 749,
-            "y2": 435,
-            "logit": 0.0,
-            "former_instance_id": 2
-        },
-        "5": {
             "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 881,
@@ -54,8 +34,8 @@
             "logit": 0.0,
             "former_instance_id": "cc_id1001"
         },
-        "6": {
-            "instance_id": 3,
+        "4": {
+            "instance_id": 2,
             "class_name": "person",
             "x1": 582,
             "y1": 224,

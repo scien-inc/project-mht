@@ -7,92 +7,42 @@
         "1": {
             "instance_id": "cc_id1001",
             "class_name": "person",
-            "x1": 308,
-            "y1": 149,
-            "x2": 460,
-            "y2": 578,
-            "logit": 0.0,
-            "former_instance_id": 1
-        },
-        "2": {
-            "instance_id": 3,
-            "class_name": "person",
-            "x1": 574,
-            "y1": 224,
-            "x2": 751,
-            "y2": 425,
-            "logit": 0.0,
-            "former_instance_id": 2
-        },
-        "3": {
-            "instance_id": 2,
-            "class_name": "person",
-            "x1": 575,
-            "y1": 224,
-            "x2": 751,
-            "y2": 428,
-            "logit": 0.0,
-            "former_instance_id": 3
-        },
-        "4": {
-            "instance_id": "cc_id1001",
-            "class_name": "person",
-            "x1": 308,
-            "y1": 149,
-            "x2": 460,
-            "y2": 578,
-            "logit": 0.0,
-            "former_instance_id": 1
-        },
-        "5": {
-            "instance_id": 2,
-            "class_name": "person",
-            "x1": 574,
-            "y1": 224,
-            "x2": 751,
-            "y2": 425,
-            "logit": 0.0,
-            "former_instance_id": 2
-        },
-        "6": {
-            "instance_id": 2,
-            "class_name": "person",
-            "x1": 575,
-            "y1": 224,
-            "x2": 751,
-            "y2": 428,
-            "logit": 0.0,
-            "former_instance_id": 3
-        },
-        "7": {
-            "instance_id": "cc_id1001",
-            "class_name": "person",
-            "x1": 308,
-            "y1": 149,
+            "x1": 307,
+            "y1": 150,
             "x2": 460,
             "y2": 578,
             "logit": 0.0,
             "former_instance_id": "cc_id1001"
         },
-        "8": {
+        "2": {
             "instance_id": 2,
             "class_name": "person",
             "x1": 574,
             "y1": 224,
             "x2": 751,
-            "y2": 425,
+            "y2": 426,
             "logit": 0.0,
             "former_instance_id": 2
         },
-        "9": {
+        "3": {
+            "instance_id": "cc_id1001",
+            "class_name": "person",
+            "x1": 308,
+            "y1": 150,
+            "x2": 460,
+            "y2": 578,
+            "logit": 0.0,
+            "former_instance_id": 1
+        },
+        "4": {
             "instance_id": 2,
             "class_name": "person",
             "x1": 575,
             "y1": 224,
             "x2": 751,
-            "y2": 428,
+            "y2": 458,
             "logit": 0.0,
-            "former_instance_id": 3
+            "former_instance_id": 2
         }
     }
 }

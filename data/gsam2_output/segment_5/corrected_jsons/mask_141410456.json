@@ -5,7 +5,7 @@
     "promote_type": "mask",
     "labels": {
         "1": {
-            "instance_id": 1,
+            "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1443,
             "y1": 92,
@@ -18,17 +18,17 @@
             "class_name": "person",
             "x1": 569,
             "y1": 224,
-            "x2": 766,
-            "y2": 488,
+            "x2": 767,
+            "y2": 487,
             "logit": 0.0
         },
-        "4": {
-            "instance_id": 4,
+        "3": {
+            "instance_id": 3,
             "class_name": "person",
-            "x1": 1858,
-            "y1": 397,
-            "x2": 1919,
-            "y2": 533,
+            "x1": 569,
+            "y1": 224,
+            "x2": 766,
+            "y2": 476,
             "logit": 0.0
         }
     }

@@ -5,27 +5,7 @@
     "promote_type": "mask",
     "labels": {
         "1": {
-            "instance_id": 1,
-            "class_name": "person",
-            "x1": 1098,
-            "y1": 419,
-            "x2": 1618,
-            "y2": 1079,
-            "logit": 0.0,
-            "former_instance_id": "cc_id1001"
-        },
-        "2": {
-            "instance_id": 3,
-            "class_name": "person",
-            "x1": 571,
-            "y1": 223,
-            "x2": 764,
-            "y2": 485,
-            "logit": 0.0,
-            "former_instance_id": 2
-        },
-        "3": {
-            "instance_id": 1,
+            "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1097,
             "y1": 419,
@@ -34,8 +14,68 @@
             "logit": 0.0,
             "former_instance_id": "cc_id1001"
         },
+        "2": {
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 571,
+            "y1": 224,
+            "x2": 764,
+            "y2": 475,
+            "logit": 0.0,
+            "former_instance_id": 2
+        },
+        "3": {
+            "instance_id": "cc_id1001",
+            "class_name": "person",
+            "x1": 1097,
+            "y1": 419,
+            "x2": 1619,
+            "y2": 1079,
+            "logit": 0.0,
+            "former_instance_id": "cc_id1001"
+        },
         "4": {
-            "instance_id": 3,
+            "instance_id": 2,
+            "class_name": "person",
+            "x1": 571,
+            "y1": 224,
+            "x2": 762,
+            "y2": 474,
+            "logit": 0.0,
+            "former_instance_id": 2
+        },
+        "5": {
+            "instance_id": 5,
+            "class_name": "person",
+            "x1": 1857,
+            "y1": 398,
+            "x2": 1919,
+            "y2": 534,
+            "logit": 0.0,
+            "former_instance_id": 5
+        },
+        "6": {
+            "instance_id": 6,
+            "class_name": "person",
+            "x1": 1857,
+            "y1": 440,
+            "x2": 1919,
+            "y2": 534,
+            "logit": 0.0,
+            "former_instance_id": 6
+        },
+        "7": {
+            "instance_id": "cc_id1001",
+            "class_name": "person",
+            "x1": 1097,
+            "y1": 419,
+            "x2": 1618,
+            "y2": 1079,
+            "logit": 0.0,
+            "former_instance_id": "cc_id1001"
+        },
+        "8": {
+            "instance_id": 2,
             "class_name": "person",
             "x1": 571,
             "y1": 224,

@@ -10,31 +10,21 @@
             "x1": 1477,
             "y1": 117,
             "x2": 1616,
-            "y2": 540,
+            "y2": 539,
             "logit": 0.0,
             "former_instance_id": 1
         },
         "2": {
-            "instance_id": 3,
+            "instance_id": 2,
             "class_name": "person",
             "x1": 569,
-            "y1": 227,
-            "x2": 766,
-            "y2": 484,
+            "y1": 225,
+            "x2": 764,
+            "y2": 491,
             "logit": 0.0,
             "former_instance_id": 2
         },
         "3": {
-            "instance_id": 2,
-            "class_name": "person",
-            "x1": 568,
-            "y1": 228,
-            "x2": 741,
-            "y2": 435,
-            "logit": 0.0,
-            "former_instance_id": 5
-        },
-        "4": {
             "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1477,
@@ -44,27 +34,17 @@
             "logit": 0.0,
             "former_instance_id": "cc_id1001"
         },
-        "5": {
-            "instance_id": 3,
+        "4": {
+            "instance_id": 2,
             "class_name": "person",
             "x1": 569,
             "y1": 227,
-            "x2": 766,
-            "y2": 484,
+            "x2": 765,
+            "y2": 476,
             "logit": 0.0,
             "former_instance_id": 2
         },
-        "6": {
-            "instance_id": 2,
-            "class_name": "person",
-            "x1": 568,
-            "y1": 228,
-            "x2": 741,
-            "y2": 435,
-            "logit": 0.0,
-            "former_instance_id": 5
-        },
-        "7": {
+        "5": {
             "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1477,
@@ -74,8 +54,8 @@
             "logit": 0.0,
             "former_instance_id": "cc_id1001"
         },
-        "8": {
-            "instance_id": 3,
+        "6": {
+            "instance_id": 2,
             "class_name": "person",
             "x1": 569,
             "y1": 227,

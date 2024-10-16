@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# split
 
 
 VIDEO_PATH="./gsam2/notebooks/videos/images"
 OUTPUT_DIR="./data/frames"
 OUTPUT_DIR_GSAM2="./data/gsam2_output"
-DURATION=30
-INTERVAL=10
+DURATION=150 #秒数ではなく枚数
+INTERVAL=50 #秒数ではなく枚数
+
+# OUTPUT_DIR内のフォルダを削除
+rm -rf $OUTPUT_DIR/*
+rm -rf $OUTPUT_DIR_GSAM2/*
 
 python module/split.py --frames_folder "$VIDEO_PATH" --output_base_dir "$OUTPUT_DIR" --duration $DURATION --interval $INTERVAL
 

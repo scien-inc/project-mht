@@ -5,7 +5,7 @@
     "promote_type": "mask",
     "labels": {
         "1": {
-            "instance_id": 1,
+            "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1346,
             "y1": 305,
@@ -15,17 +15,37 @@
             "former_instance_id": "cc_id1001"
         },
         "2": {
-            "instance_id": 3,
+            "instance_id": 2,
             "class_name": "person",
             "x1": 571,
-            "y1": 223,
-            "x2": 765,
-            "y2": 483,
+            "y1": 224,
+            "x2": 762,
+            "y2": 473,
             "logit": 0.0,
             "former_instance_id": 2
         },
         "3": {
-            "instance_id": 1,
+            "instance_id": 5,
+            "class_name": "person",
+            "x1": 1856,
+            "y1": 398,
+            "x2": 1919,
+            "y2": 533,
+            "logit": 0.0,
+            "former_instance_id": 5
+        },
+        "4": {
+            "instance_id": 6,
+            "class_name": "person",
+            "x1": 1856,
+            "y1": 441,
+            "x2": 1919,
+            "y2": 533,
+            "logit": 0.0,
+            "former_instance_id": 6
+        },
+        "5": {
+            "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1344,
             "y1": 305,
@@ -34,8 +54,8 @@
             "logit": 0.0,
             "former_instance_id": "cc_id1001"
         },
-        "4": {
-            "instance_id": 3,
+        "6": {
+            "instance_id": 2,
             "class_name": "person",
             "x1": 570,
             "y1": 223,

@@ -8,19 +8,19 @@
             "instance_id": "cc_id1001",
             "class_name": "person",
             "x1": 1145,
-            "y1": 112,
+            "y1": 113,
             "x2": 1367,
             "y2": 672,
             "logit": 0.0,
             "former_instance_id": 1
         },
         "2": {
-            "instance_id": 3,
+            "instance_id": 2,
             "class_name": "person",
-            "x1": 583,
+            "x1": 578,
             "y1": 223,
-            "x2": 750,
-            "y2": 435,
+            "x2": 766,
+            "y2": 483,
             "logit": 0.0,
             "former_instance_id": 2
         },
@@ -35,27 +35,7 @@
             "former_instance_id": "cc_id1001"
         },
         "4": {
-            "instance_id": 3,
-            "class_name": "person",
-            "x1": 583,
-            "y1": 223,
-            "x2": 750,
-            "y2": 435,
-            "logit": 0.0,
-            "former_instance_id": 2
-        },
-        "5": {
-            "instance_id": "cc_id1001",
-            "class_name": "person",
-            "x1": 1145,
-            "y1": 112,
-            "x2": 1367,
-            "y2": 672,
-            "logit": 0.0,
-            "former_instance_id": "cc_id1001"
-        },
-        "6": {
-            "instance_id": 3,
+            "instance_id": 2,
             "class_name": "person",
             "x1": 580,
             "y1": 223,
